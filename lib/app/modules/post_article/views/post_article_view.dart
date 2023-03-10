@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
 import 'package:get/get.dart';
 
 import '../controllers/post_article_controller.dart';
@@ -78,14 +77,15 @@ class PostArticleView extends GetView<PostArticleController> {
                   color: Color(0xFFFD9D9D9),
                 ),
                 child: Center(
-                  child: 
-                  // controller.isLoading.value
-                      ? CircularProgressIndicator()
-                      : Text(
-                          "Post",
-                          style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold, color: Colors.black),
-                        ),
+                  child:
+                      // controller.isLoading.value
+                      // ? CircularProgressIndicator()
+                      // :
+                      Text(
+                    "Post",
+                    style:
+                        TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.black),
+                  ),
                 ),
               ),
             ),
