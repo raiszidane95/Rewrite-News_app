@@ -52,6 +52,15 @@ class HomeView extends GetView<HomeController> {
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w300, color: Colors.black87),
                       ),
+                      Gap(15),
+                      IconButton(
+                        onPressed: () => controller.deleteArticle(
+                            id: controller.listArticle[index].id.toString()),
+                        icon: Icon(
+                          Icons.delete,
+                          color: Colors.red,
+                        ),
+                      ),
                     ],
                   ),
                 ),
